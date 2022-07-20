@@ -42,17 +42,7 @@ app.include_router(auth.router)
 app.include_router(vote.router)
 
 
-memory=[{"Title":"My first post!!","id":1}]
-def find_post(id):
-    for p in memory:
-        if p["id"]==id:
-            return p
 
-def find_index_post(id):
-    for i,p in enumerate(memory):
-        if p["id"]==id:
-           return i
-          
 
 
 
